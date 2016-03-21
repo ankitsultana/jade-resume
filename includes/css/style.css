@@ -27,6 +27,15 @@ a {
 .bold {
   font-weight: 600; }
 
+.right {
+  text-align: right; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
 ul.nostyle, ul.links, ul.inline {
   list-style-type: none;
   padding: 0; }
@@ -105,7 +114,7 @@ li {
 
 .left-column {
   float: left;
-  max-width: 35%;
+  max-width: 32%;
   text-align: left;
   padding-left: 10px;
   margin-left: 20px; }
@@ -121,16 +130,20 @@ li {
     padding: 0px 10px;
     margin-bottom: 10px; }
   .left-column li {
+    list-style-type: none;
     padding-left: 10px;
     font-size: 13px;
     margin-top: -2.9px; }
     .left-column li span {
       position: relative;
       left: -9px; }
+    .left-column li span:before {
+      content: "•";
+      margin-right: 0px; }
 
 .right-column {
   float: right;
-  width: 65%;
+  width: 64%;
   text-align: left;
   padding: 0; }
   .right-column h2 {

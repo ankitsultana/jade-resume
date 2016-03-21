@@ -34,6 +34,15 @@ a {
 .bold {
     font-weight: 600;
 }
+.right {
+    text-align: right;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
 
 ul.nostyle {
     list-style-type: none;
@@ -130,7 +139,7 @@ li {
 }
 .left-column {
     float: left;
-    max-width: 35%;
+    max-width: 32%;
     text-align: left;
     padding-left: 10px;
     margin-left: 20px;
@@ -149,9 +158,14 @@ li {
         margin-bottom: 10px;
     }
     li {
+        list-style-type: none;
         span {
             position: relative;
             left: -9px;
+        }
+        span:before {
+            content: "•";
+            margin-right: 0px;
         }
         padding-left: 10px;
         font-size: $text-size;
@@ -160,7 +174,7 @@ li {
 }
 .right-column {
     float: right;
-    width: 65%;
+    width: 64%;
     text-align: left;
     padding: 0;
     h2 {
