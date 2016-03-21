@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/*
+ * Author: Ankit Sultana
+ * Original Repo: https://github.com/bk2dcradle/jade-resume
+ * LICENSE: GNU GPL v3
+ */
 * {
   margin: 0; }
 
@@ -8,18 +13,40 @@ html, body {
   text-align: center;
   font-family: "Raleway"; }
 
+ol {
+  padding: 0;
+  font-size: 13px; }
+  ol li span {
+    font-size: 13px; }
+
+sup {
+  padding: 0;
+  margin-left: -3px; }
+
 br {
   display: block;
   margin: 4px 0;
   content: " "; }
 
-.clearfix {
-  clear: both; }
+li {
+  font-family: "Lato";
+  font-weight: 300;
+  color: #000; }
 
 a {
   text-decoration: none;
   color: inherit;
   font-weight: 400; }
+
+#update-status {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 9.1px;
+  font-weight: 300; }
+
+.clearfix {
+  clear: both; }
 
 .italic {
   font-style: italic; }
@@ -36,33 +63,8 @@ a {
 .right {
   text-align: right; }
 
-ul.nostyle, ul.links, ul.inline {
-  list-style-type: none;
-  padding: 0; }
-  ul.nostyle li span, ul.links li span, ul.inline li span {
-    position: relative;
-    left: -18px;
-    margin: 0; }
-  ul.nostyle li a, ul.links li a, ul.inline li a {
-    margin-left: 0; }
-
-ul.links li {
-  margin-left: -18px; }
-
 .no-overlap {
   margin-bottom: 5px; }
-
-ul.inline {
-  list-style-type: none; }
-  ul.inline span:before {
-    content: "•";
-    margin-right: 3px; }
-  ul.inline li span {
-    float: left;
-    display: inline-block;
-    margin-top: -5px;
-    margin-right: 3px;
-    padding: 0; }
 
 .heading {
   max-width: 750px;
@@ -107,11 +109,6 @@ ul.inline {
     font-size: 13px;
     font-weight: normal; }
 
-li {
-  font-family: "Lato";
-  font-weight: 300;
-  color: #000; }
-
 .left-column {
   float: left;
   max-width: 32%;
@@ -127,7 +124,7 @@ li {
     font-family: "Raleway";
     font-weight: 400; }
   .left-column ul {
-    padding: 0px 10px;
+    padding: 0px;
     margin-bottom: 10px; }
   .left-column li {
     list-style-type: none;
@@ -140,6 +137,25 @@ li {
     .left-column li span:before {
       content: "•";
       margin-right: 0px; }
+  .left-column ul.inline {
+    padding: 0; }
+    .left-column ul.inline span:before {
+      content: "•";
+      margin-right: 3px; }
+    .left-column ul.inline li span {
+      float: left;
+      display: inline-block;
+      margin-top: -5px;
+      margin-right: 3px;
+      padding: 0; }
+  .left-column ul.nostyle {
+    list-style-type: none;
+    padding: 0; }
+    .left-column ul.nostyle li span {
+      position: relative;
+      left: -18px; }
+    .left-column ul.nostyle li {
+      margin-left: -9px; }
 
 .right-column {
   float: right;
@@ -179,39 +195,19 @@ li {
     font-family: "Lato";
     font-size: 13px;
     font-weight: 300; }
-
-ol {
-  padding: 0;
-  font-size: 13px; }
-  ol li span {
-    font-size: 13px; }
-
-.publications-list {
-  padding: 0;
-  counter-reset: list; }
-
-.publications-list > li {
-  list-style-position: none;
-  position: relative;
-  list-style: none;
-  margin-left: 20px; }
-
-.publications-list > li:before {
-  content: "[" counter(list,decimal) "]  ";
-  counter-increment: list;
-  position: absolute;
-  left: -20px; }
-
-#update-status {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 9.1px;
-  font-weight: 300; }
-
-sup {
-  padding: 0;
-  margin-left: -3px; }
+  .right-column .publications-list {
+    padding: 0;
+    counter-reset: list; }
+  .right-column .publications-list > li {
+    list-style-position: none;
+    position: relative;
+    list-style: none;
+    margin-left: 20px; }
+  .right-column .publications-list > li:before {
+    content: "[" counter(list,decimal) "]  ";
+    counter-increment: list;
+    position: absolute;
+    left: -20px; }
 
 /*
  * Table

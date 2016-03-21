@@ -1,3 +1,8 @@
+/*
+ * Author: Ankit Sultana
+ * Original Repo: https://github.com/bk2dcradle/jade-resume
+ * LICENSE: GNU GPL v3
+ */
 $heading-color: #9F9F9F;
 $text-size: 13px;
 
@@ -15,18 +20,41 @@ html, body {
     text-align: center;
     font-family: $font-stack-two;
 }
+ol {
+    padding: 0;
+    font-size: $text-size;
+    li span {
+        font-size: $text-size;
+    }
+}
+sup {
+    padding: 0;
+    margin-left: -3px;
+}
 br {
     display: block;
     margin: 4px 0;
     content: " ";
 }
-.clearfix {
-    clear: both;
+li {
+    font-family: $font-stack-one;
+    font-weight: 300;
+    color: #000;
 }
 a {
     text-decoration: none;
     color: inherit;
     font-weight: 400;
+}
+#update-status {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: $text-size * 0.7;
+    font-weight: 300;
+}
+.clearfix {
+    clear: both;
 }
 .italic {
     font-style: italic;
@@ -43,42 +71,8 @@ a {
 .right {
     text-align: right;
 }
-
-ul.nostyle {
-    list-style-type: none;
-    padding: 0;
-    li span {
-        position: relative;
-        left: -18px;
-        margin: 0;
-    }
-    li a {
-        margin-left: 0;
-    }
-}
-ul.links {
-    @extend .nostyle;
-    li {
-        margin-left: -18px;
-    }
-}
 .no-overlap {
     margin-bottom: 5px;
-}
-ul.inline {
-    @extend .nostyle;
-    list-style-type: none;
-    span:before {
-        content: "•";
-        margin-right: 3px;
-    }
-    li span {
-        float: left;
-        display: inline-block;
-        margin-top: -5px;
-        margin-right: 3px;
-        padding: 0;
-    }
 }
 
 .heading {
@@ -132,11 +126,6 @@ ul.inline {
         font-weight: normal;
     }
 }
-li {
-    font-family: $font-stack-one;
-    font-weight: 300;
-    color: #000;
-}
 .left-column {
     float: left;
     max-width: 32%;
@@ -154,7 +143,7 @@ li {
         font-weight: 400;
     }
     ul {
-        padding: 0px 10px;
+        padding: 0px;
         margin-bottom: 10px;
     }
     li {
@@ -170,6 +159,31 @@ li {
         padding-left: 10px;
         font-size: $text-size;
         margin-top: -2.9px;
+    }
+    ul.inline {
+        padding: 0;
+        span:before {
+            content: "•";
+            margin-right: 3px;
+        }
+        li span {
+            float: left;
+            display: inline-block;
+            margin-top: -5px;
+            margin-right: 3px;
+            padding: 0;
+        }
+    }
+    ul.nostyle {
+        list-style-type: none;
+        padding: 0;
+        li span {
+            position: relative;
+            left: -18px;
+        }
+        li {
+            margin-left: -9px;
+        }
     }
 }
 .right-column {
@@ -219,42 +233,22 @@ li {
         font-size: $text-size;
         font-weight: 300;
     }
-}
-
-ol {
-    padding: 0;
-    font-size: $text-size;
-    li span {
-        font-size: $text-size;
+    .publications-list {
+        padding: 0;
+        counter-reset: list;
     }
-}
-.publications-list {
-    padding: 0;
-    counter-reset: list;
-}
-.publications-list > li {
-    list-style-position: none;
-    position: relative;
-    list-style: none;
-    margin-left: 20px;
-}
-.publications-list > li:before {
-    content: "[" counter(list, decimal) "]  ";
-    counter-increment: list;
-    position: absolute;;
-    left: -20px;
-}
-#update-status {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: $text-size * 0.7;
-    font-weight: 300;
-}
-
-sup {
-    padding: 0;
-    margin-left: -3px;
+    .publications-list > li {
+        list-style-position: none;
+        position: relative;
+        list-style: none;
+        margin-left: 20px;
+    }
+    .publications-list > li:before {
+        content: "[" counter(list, decimal) "]  ";
+        counter-increment: list;
+        position: absolute;;
+        left: -20px;
+    }
 }
 
 /*

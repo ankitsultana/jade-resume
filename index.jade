@@ -2,7 +2,7 @@
 // Jade Template
 // Author: Ankit Sultana
 // Original Repo: https://github.com/bk2dcradle/jade-resume
-// License: GNU GPL v3
+// LICENSE: GNU GPL v3
 
 doctype html
 html(lang="en")
@@ -49,11 +49,10 @@ html(lang="en")
                 // Begin Subsection
                 h2 La Martiniere for Boys
                 h4 Grad. May 2011| Kolkata, India
- 
                 ///////// Begin Section: Links /////////
                 h1 Links
                 // List follows
-                ul.links
+                ul.nostyle
                     li Facebook://#[a(href="#") dd]
                     li GitHub://#[a(href="#") deedydas]
                     li LinkedIn://#[a(href="#") debarghyadas]
@@ -88,8 +87,8 @@ html(lang="en")
                 h1 Skills
                 // Begin Subsection
                 h2 Programming
-                // Use h4 with no overlap for the corresponding list to not
-                // overlap with the h4
+                // Use no-overlap if inline list overlaps with any element
+                // above it
                 h4.no-overlap Over 5000 lines
                 // Note: Use span with li elements so the bullets can be closer
                 //       than the browser default value. Refer:
