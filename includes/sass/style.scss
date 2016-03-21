@@ -1,8 +1,9 @@
-$color-three: #B1B1B1;
-$color-four: #9F9F9F;
-$link-color: #717171;
-$text-color: #3E3E3E;
+$heading-color: #9F9F9F;
 $text-size: 13px;
+
+$font-stack-one: 'Lato';
+$font-stack-two: 'Raleway';
+$container-width: 750px;
 
 * {
     margin: 0;
@@ -12,7 +13,12 @@ html, body {
     width: 100%;
     height: 100%;
     text-align: center;
-    font-family: 'Raleway';
+    font-family: $font-stack-two;
+}
+br {
+    display: block;
+    margin: 4px 0;
+    content: " ";
 }
 .clearfix {
     clear: both;
@@ -41,10 +47,10 @@ ul.nostyle {
         margin-left: 0;
     }
 }
-ul.circle {
-    span:before {
-        content: "•";
-        margin-right: 3px;
+ul.links {
+    @extend .nostyle;
+    li {
+        margin-left: -18px;
     }
 }
 .no-overlap {
@@ -67,35 +73,35 @@ ul.inline {
 }
 
 .heading {
-    max-width: 700px;
+    max-width: $container-width;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
     h1 {
         font-size: 50px;
-        font-family: 'Lato';
+        font-family: $font-stack-one;
         font-weight: 300;
         span {
             font-weight: 100;
         }
     }
     h3 {
-        font-family: 'Raleway';
+        font-family: $font-stack-two;
         font-size: 14px;
         color: #6A6A6A;
         font-weight: 200;
     }
 }
 .content {
-    width: 750px;
+    width: $container-width;
     margin: auto;
     h1 {
         text-transform: uppercase;
         margin-top: 8px;
         font-size: 20px;
         font-weight: 300;
-        color: darken($color-four, 30);
-        font-family: 'Lato';
+        color: darken($heading-color, 30);
+        font-family: $font-stack-one;
     }
     h2 {
         font-size: 15px;
@@ -105,7 +111,7 @@ ul.inline {
             font-size: 13px;
             font-weight: 400;
         }
-        font-family: 'Lato';
+        font-family: $font-stack-one;
     }
     h3 {
         font-size: 14px;
@@ -118,7 +124,7 @@ ul.inline {
     }
 }
 li {
-    font-family: 'Lato';
+    font-family: $font-stack-one;
     font-weight: 300;
     color: #000;
 }
@@ -130,12 +136,12 @@ li {
     margin-left: 20px;
     p {
         font-size: 12px;
-        font-family: 'Lato';
+        font-family: $font-stack-one;
         font-weight: 300;
     }
     p.lead {
         font-size: 13px;
-        font-family: 'Raleway';
+        font-family: $font-stack-two;
         font-weight: 400;
     }
     ul {
@@ -158,10 +164,10 @@ li {
     text-align: left;
     padding: 0;
     h2 {
-        font-family: 'Lato';
+        font-family: $font-stack-one;
         span {
             font-size: 12px;
-            font-family: 'Raleway';
+            font-family: $font-stack-two;
             display: inline-block;
             font-weight: 500;
         }
@@ -176,12 +182,12 @@ li {
         font-size: 12px;
     }
     ul {
-        padding: 0px 0px;
+        padding: 0px;
         padding-left: 20px;
-        margin-bottom: 5px;
-        margin-top: 0px;
+        margin: 0 0 5px 5px;
     }
     ul li {
+        margin-left: 5px;
         span {
             position: relative;
             left: -5px;
@@ -195,22 +201,12 @@ li {
         font-size: $text-size;
     }
     p {
-        font-family: 'Lato';
+        font-family: $font-stack-one;
         font-size: $text-size;
         font-weight: 300;
     }
 }
-br {
-    display: block;
-    margin: 4px 0;
-    content: " ";
-}
 
-.tester {
-    li {
-        margin-left: 5px;
-    }
-}
 ol {
     padding: 0;
     font-size: $text-size;
@@ -242,17 +238,18 @@ ol {
     font-weight: 300;
 }
 
+sup {
+    padding: 0;
+    margin-left: -3px;
+}
+
 /*
  * Table
  */
 
 table {
-    sup {
-        padding: 0;
-        margin-left: -3px;
-    }
     padding: 0;
-    font-family: 'Lato';
+    font-family: $font-stack-one;
     font-weight: 300;
     border-collapse: separate;
     border-spacing: 0px;

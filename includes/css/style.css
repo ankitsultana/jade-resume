@@ -6,7 +6,12 @@ html, body {
   width: 100%;
   height: 100%;
   text-align: center;
-  font-family: 'Raleway'; }
+  font-family: "Raleway"; }
+
+br {
+  display: block;
+  margin: 4px 0;
+  content: " "; }
 
 .clearfix {
   clear: both; }
@@ -22,19 +27,18 @@ a {
 .bold {
   font-weight: 600; }
 
-ul.nostyle, ul.inline {
+ul.nostyle, ul.links, ul.inline {
   list-style-type: none;
   padding: 0; }
-  ul.nostyle li span, ul.inline li span {
+  ul.nostyle li span, ul.links li span, ul.inline li span {
     position: relative;
     left: -18px;
     margin: 0; }
-  ul.nostyle li a, ul.inline li a {
+  ul.nostyle li a, ul.links li a, ul.inline li a {
     margin-left: 0; }
 
-ul.circle span:before {
-  content: "•";
-  margin-right: 3px; }
+ul.links li {
+  margin-left: -18px; }
 
 .no-overlap {
   margin-bottom: 5px; }
@@ -52,18 +56,18 @@ ul.inline {
     padding: 0; }
 
 .heading {
-  max-width: 700px;
+  max-width: 750px;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px; }
   .heading h1 {
     font-size: 50px;
-    font-family: 'Lato';
+    font-family: "Lato";
     font-weight: 300; }
     .heading h1 span {
       font-weight: 100; }
   .heading h3 {
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-size: 14px;
     color: #6A6A6A;
     font-weight: 200; }
@@ -77,12 +81,12 @@ ul.inline {
     font-size: 20px;
     font-weight: 300;
     color: #535353;
-    font-family: 'Lato'; }
+    font-family: "Lato"; }
   .content h2 {
     font-size: 15px;
     font-weight: bolder;
     text-transform: uppercase;
-    font-family: 'Lato'; }
+    font-family: "Lato"; }
     .content h2 span {
       font-size: 13px;
       font-weight: 400; }
@@ -95,7 +99,7 @@ ul.inline {
     font-weight: normal; }
 
 li {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 300;
   color: #000; }
 
@@ -107,11 +111,11 @@ li {
   margin-left: 20px; }
   .left-column p {
     font-size: 12px;
-    font-family: 'Lato';
+    font-family: "Lato";
     font-weight: 300; }
   .left-column p.lead {
     font-size: 13px;
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-weight: 400; }
   .left-column ul {
     padding: 0px 10px;
@@ -130,10 +134,10 @@ li {
   text-align: left;
   padding: 0; }
   .right-column h2 {
-    font-family: 'Lato'; }
+    font-family: "Lato"; }
     .right-column h2 span {
       font-size: 12px;
-      font-family: 'Raleway';
+      font-family: "Raleway";
       display: inline-block;
       font-weight: 500; }
     .right-column h2 span::first-letter {
@@ -144,11 +148,11 @@ li {
     padding: 0;
     font-size: 12px; }
   .right-column ul {
-    padding: 0px 0px;
+    padding: 0px;
     padding-left: 20px;
-    margin-bottom: 5px;
-    margin-top: 0px; }
+    margin: 0 0 5px 5px; }
   .right-column ul li {
+    margin-left: 5px;
     font-size: 13px; }
     .right-column ul li span {
       position: relative;
@@ -159,17 +163,9 @@ li {
       margin-right: 5px;
       font-size: 14px; }
   .right-column p {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-size: 13px;
     font-weight: 300; }
-
-br {
-  display: block;
-  margin: 4px 0;
-  content: " "; }
-
-.tester li {
-  margin-left: 5px; }
 
 ol {
   padding: 0;
@@ -200,19 +196,20 @@ ol {
   font-size: 9.1px;
   font-weight: 300; }
 
+sup {
+  padding: 0;
+  margin-left: -3px; }
+
 /*
  * Table
  */
 table {
   padding: 0;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 300;
   border-collapse: separate;
   border-spacing: 0px;
   font-size: 13.013px; }
-  table sup {
-    padding: 0;
-    margin-left: -3px; }
   table tr, table th, table td {
     padding: 0; }
   table th:nth-child(1), table td:nth-child(1) {

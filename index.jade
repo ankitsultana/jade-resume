@@ -3,24 +3,35 @@ html(lang="en")
     head
         title= pageTitle
         link(href="includes/css/style.css", rel="stylesheet")
+        // Link to the corresponding fonts
+        // Font: Raleway | https://github.com/mrkelly/lato.git
         link(href="includes/fonts/raleway/raleway.css" rel="stylesheet")
+        // Font: Lato | https://github.com/softwaymedical/raleway.git
         link(href="includes/fonts/lato/css/lato.min.css" rel="stylesheet")
     body
         #update-status
             p.
                 Last updated on March 21, 2016
+        // Things above the horizontal rule
         .heading
             h1 #[span Debarghya] Das
             h3 #[a(href="#") debarghyadas.com] | #[a(href="#") fb.co/dd]
             h3 #[a(href="#") deedy@fb.com | 607.379.5733 | dd367@cornell.edu]
         hr
         .content
+            ////////////////////////
+            // Left Column begins //
+            ////////////////////////
             .left-column
+                ///////// Begin Section: Education /////////
                 h1 Education
+                // Begin Subsection
                 h2 Cornell University
                 h3 MEng in Computer Science
                 h4 Dec 2014 | Ithaca, NY
+                // Space between two subsections
                 br
+                // Begin Subsection
                 h2 Cornell University
                 h3 BS in Computer Science
                 h4 May 2014 | Ithaca, NY
@@ -29,19 +40,24 @@ html(lang="en")
                 p.lead Cum. GPA: 3.83/4.0
                 p.lead Major GPA: 3.9/4.0
                 br
+                // Begin Subsection
                 h2 La Martiniere for Boys
                 h4 Grad. May 2011| Kolkata, India
                 
+                ///////// Begin Section: Links /////////
                 h1 Links
-                ul.nostyle
-                    li #[span Facebook: #[a(href="#") dd]]
-                    li #[span GitHub: #[a(href="#") deedydas]]
-                    li #[span LinkedIn: #[a(href="#") debarghyadas]]
-                    li #[span YouTube #[a(href="#") DeedyDash007]]
-                    li #[span Twitter #[a(href="#") @debarghya_das]]
-                    li #[span Quora: #[a(href="#") Debarghya-Das]]
+                // List follows
+                ul.links
+                    li Facebook://#[a(href="#") dd]
+                    li GitHub://#[a(href="#") deedydas]
+                    li LinkedIn://#[a(href="#") debarghyadas]
+                    li YouTube://#[a(href="#") DeedyDash007]
+                    li Twitter://#[a(href="#") @debarghya_das]
+                    li Quora://#[a(href="#") Debarghya-Das]
                 
+                ///////// Begin Section: Coursework /////////
                 h1 Coursework
+                // Begin Subsection
                 h2 Graduate
                 p Advanced Machine Learning
                 p Open Source Sofware Engineering
@@ -52,6 +68,7 @@ html(lang="en")
                 p Defending Computer Networks
                 p Machine Learning
                 
+                // Begin Subsection
                 h2 Undergraduate
                 p Information Retrieval
                 p Operating Systems
@@ -60,10 +77,17 @@ html(lang="en")
                 p Computer Graphics + Practicum
                 p.italic.bold (Research Asst. & Teaching Asst 2x)
                 p Unix Tools and Scripting
-                    
+                
+                ///////// Begin Section: Skills /////////
                 h1 Skills
+                // Begin Subsection
                 h2 Programming
+                // Use h4 with no overlap for the corresponding list to not
+                // overlap with the h4
                 h4.no-overlap Over 5000 lines
+                // Note: Use span with li elements so the bullets can be closer
+                //       than the browser default value. Refer:
+                //       http://stackoverflow.com/questions/4373046/css-control-space-between-bullet-and-li
                 ul.inline
                     li #[span Java]
                     li #[span Shell]
@@ -82,37 +106,42 @@ html(lang="en")
                     li #[span iOS]
                     li #[span Android]
                     li #[span MySQL]
-            //////////////////////
-            // Left Column ends //
-            //////////////////////
+            ////////////////////////
+            /// Left Column ends ///
+            ////////////////////////
+            // Right Column Begins//
+            ////////////////////////
             .right-column
+                ///////// Begin Section: Experience /////////
                 h1 Experience
-                
+                // Begin Subsection
                 h2 Facebook | #[span Software Engineer]
                 h3 Jan 2015 - Present | New York, NY
+                // Space between subsections, in case if they are too close
                 br
+                // Begin Subsection
                 h2 Coursera | #[span KPCB Fellow + Software Engineering Intern]
                 h3 June 2014 - Sep 2014 | Mountain View, CA
-                ul.tester
+                ul
                     li 52 out of 2500 applicants chosen to be a KPCB Fellow 2014
                     li Led and shipped Yoda - the admin interface for the new Phoenix platform
                     li. 
                         Full-stack developer - Wrote and reviewed code for JS
                         using Backbone, Jade, Stylus and Require and Scala using Play
-                    
+                // Begin Subsection
                 h2 Google | #[span Software Engineering Intern]
                 h3 May 2013 - Aug 2013 | Mountain View, CA
-                ul.tester
+                ul
                     li.
                         Worked on the YouTube Captions team, in Javascript and Python to plan
                         design and develop the full stack to add and edit Automatic Speech
                         Recognition captions. In Production.
                     li.
                         Created a backbone.js-like framework for the Captions editor.
-                
+                // Begin Subsection
                 h2 Phabricator | #[span Open Source Contributor & Team Leader]
                 h3 Jan 2013 - May 2013 | Palo Alto, CA & Ithaca, NY
-                ul.tester
+                ul
                     li.
                         Phabricator is used daily by Facebook, Dropbox, Quora, Asana
                         and more
@@ -121,8 +150,9 @@ html(lang="en")
                     li.
                         Led a team from MIT, Cornell, IC London and UHelsinki for the
                         project
-                    
+                ///////// Begin Section: Research /////////
                 h1 Research
+                // Begin Subsection
                 h2 Cornell Robot Learning Lab | #[span Researcher]
                 h3 Jan 2014 - Jan 2015 | Ithaca, NY
                 p.
@@ -130,13 +160,14 @@ html(lang="en")
                     a tool which learns from large scale preference feedback to plan
                     robot trajectories in human environments
                 br
+                // Begin Subsection
                 h2 Cornell Phonetics Lab | #[span Head Undergraduate Researcher]
                 h3 May 2012 - May 2013 | Ithace, NY
                 p.
                     Led the development of QuickTongue, the first ever breakthrough
                     tongue-controlled game with Prof Sam Tilsen to aid in Linguistics
                     research
-                
+                ///////// Begin Section: Awards /////////
                 h1 Awards
                 table(cellspacing="0", cellpadding="0")
                     tbody
@@ -164,6 +195,7 @@ html(lang="en")
                             td 2012
                             td National
                             td Indian National Mathematics Olympiad(INMO) Finalist
+                ///////// Begin Section: Publications /////////
                 h1 Publications
                 ol.publications-list
                     li.
@@ -174,3 +206,6 @@ html(lang="en")
                         S. TIlsen, D.Das, and B.McKee. Real-time articulatory
                         biofeedback with electromagnetic articulography.
                         #[span.italic Linguistics Vanguard, in press.]
+                ////////////////////////
+                /// Right Column Ends //
+                ////////////////////////
