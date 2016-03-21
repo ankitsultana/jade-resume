@@ -7,7 +7,7 @@
 doctype html
 html(lang="en")
     head
-        title= pageTitle
+        title= 'Jade Resume'
         link(href="includes/css/style.css", rel="stylesheet")
         // Link to the corresponding fonts
         // Font: Raleway | https://github.com/mrkelly/lato.git
@@ -129,7 +129,7 @@ html(lang="en")
                 h2 Coursera | #[span KPCB Fellow + Software Engineering Intern]
                 h3 June 2014 - Sep 2014 | Mountain View, CA
                 ul
-                    li 52 out of 2500 applicants chosen to be a KPCB Fellow 2014
+                    li 52 out of 2500 applicants chosen to be a #[a(href="#") KPCB] Fellow 2014
                     li Led and shipped Yoda - the admin interface for the new Phoenix platform
                     li. 
                         Full-stack developer - Wrote and reviewed code for JS
@@ -162,7 +162,7 @@ html(lang="en")
                 h2 Cornell Robot Learning Lab | #[span Researcher]
                 h3 Jan 2014 - Jan 2015 | Ithaca, NY
                 p.
-                    Worked with Ashesh Jain and Prof Ashutosh Saxena to create PlanIt,
+                    Worked with #[a(href="#") Ashesh Jain] and #[a(href="#") Prof Ashutosh Saxena] to create PlanIt,
                     a tool which learns from large scale preference feedback to plan
                     robot trajectories in human environments
                 br
@@ -205,7 +205,7 @@ html(lang="en")
                 h1 Publications
                 ol.publications-list
                     li.
-                        A. Jain, D.Das and A.Saxena. Planit: A crowdsourcing approach
+                        #[a(href="#") A. Jain], #[a(href="#") D.Das] and #[a(href="#") A.Saxena]. Planit: A crowdsourcing approach
                         for learning to plan paths from large scale preference
                         feedback. #[span.italic Tech Report, ICRA, in press]
                     li.
