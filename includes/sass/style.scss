@@ -96,6 +96,7 @@ ul.inline {
             font-size: 13px;
             font-weight: 400;
         }
+        font-family: 'Lato';
     }
     h3 {
         font-size: 14px;
@@ -166,5 +167,11 @@ li {
             font-size: 14px;
         }
         font-size: $text-size;
+    }
+}
+
+.tester {
+    li {
+        margin-left: 5px;
     }
 }

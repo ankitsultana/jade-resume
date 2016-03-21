@@ -72,7 +72,8 @@ ul.inline {
   .content h2 {
     font-size: 15px;
     font-weight: bolder;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: 'Lato'; }
     .content h2 span {
       font-size: 13px;
       font-weight: 400; }
@@ -134,5 +135,8 @@ li {
       margin-left: 5px;
       margin-right: 5px;
       font-size: 14px; }
+
+.tester li {
+  margin-left: 5px; }
 
 /*# sourceMappingURL=style.css.map */

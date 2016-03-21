@@ -1,3 +1,6 @@
 [submodule "includes/fonts/lato"]
 	path = includes/fonts/lato
 	url = https://github.com/mrkelly/lato.git
+[submodule "includes/fonts/raleway"]
+	path = includes/fonts/raleway
+	url = https://github.com/softwaymedical/raleway.git
