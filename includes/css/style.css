@@ -78,8 +78,8 @@ ul.inline {
       font-weight: 400; }
   .content h3 {
     font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase; }
+    font-weight: 400;
+    text-transform: capitalize; }
   .content h4 {
     font-size: 13px;
     font-weight: normal; }

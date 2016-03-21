@@ -1,0 +1,3 @@
+[submodule "includes/fonts/lato"]
+	path = includes/fonts/lato
+	url = https://github.com/mrkelly/lato.git
