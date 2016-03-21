@@ -1,12 +1,10 @@
 # jade-resume
 
-### [Sample Resume]()
+### [Sample Resume](https://ankitsultana.me/jade-resume/deedy-resume.pdf)
 
-Because tex sucks
+This is [deedy](https://github.com/deedy/Deedy-Resume)'s awesome resume template, but without any **TeX**.
 
-This is [deedy](https://github.com/deedy/Deedy-Resume)'s resume template, but without any **TeX**.
-
-You can use [jade](http://jade-lang.com) to edit the content to your heart's delight. There is an index.jade
+You can use [jade](http://jade-lang.com) to edit the content to your heart's delight. There is an index.jade file that is initially filled with deedy's data, so you can compare [this](https://ankitsultana.me/jade-resume/deedy-resume.pdf) and the [original](https://raw.githubusercontent.com/deedydas/Deedy-Resume/master/OpenFonts/sample-image.png) one written in Tex.
 
 ### Installation
 
@@ -45,7 +43,7 @@ live-server
 
 ### PDF
 
-To convert the web page to [pdf](http://www.wikihow.com/Save-a-Web-Page-as-a-PDF-in-Google-Chrome), use the old Command + P (Ctrl + P) thing in Chrome. Settings should be as follows:
+To convert the web page to [pdf](http://www.wikihow.com/Save-a-Web-Page-as-a-PDF-in-Google-Chrome), use the old Command + P (Ctrl + P) trick in Chrome. Settings should be as follows:
 
 Attribute | Value
 ----------|------
@@ -54,8 +52,6 @@ Paper Size| Letter
 Margins   | None
 Pages     | 1
 
-If you know a better way to do it, feel free to open an issue explaining the same, and I will edit the project/README
-
 ### License
 
-[GNU GPL v3](https://github.com/bk2dcradle/jade-resume/blob/master/LICENSE)
+[GNU GPL v3](https://github.com/bk2dcradle/jade-resume/blob/master/LICENSE) (c) [Ankit Sultana](https://twitter.com/AnkitSultana)
