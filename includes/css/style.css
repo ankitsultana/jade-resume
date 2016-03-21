@@ -16,6 +16,12 @@ a {
   color: inherit;
   font-weight: 400; }
 
+.italic {
+  font-style: italic; }
+
+.bold {
+  font-weight: 600; }
+
 ul.nostyle, ul.inline {
   list-style-type: none;
   padding: 0; }
@@ -30,6 +36,9 @@ ul.circle span:before {
   content: "•";
   margin-right: 3px; }
 
+.no-overlap {
+  margin-bottom: 5px; }
+
 ul.inline {
   list-style-type: none; }
   ul.inline span:before {
@@ -38,6 +47,7 @@ ul.inline {
   ul.inline li span {
     float: left;
     display: inline-block;
+    margin-top: -5px;
     margin-right: 3px;
     padding: 0; }
 
@@ -51,8 +61,7 @@ ul.inline {
     font-family: 'Lato';
     font-weight: 300; }
     .heading h1 span {
-      font-weight: 200;
-      color: #B1B1B1; }
+      font-weight: 100; }
   .heading h3 {
     font-family: 'Raleway';
     font-size: 14px;
@@ -64,7 +73,7 @@ ul.inline {
   margin: auto; }
   .content h1 {
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 8px;
     font-size: 20px;
     font-weight: 300;
     color: #535353;
@@ -94,13 +103,23 @@ li {
   float: left;
   max-width: 35%;
   text-align: left;
+  padding-left: 10px;
   margin-left: 20px; }
+  .left-column p {
+    font-size: 12px;
+    font-family: 'Lato';
+    font-weight: 300; }
+  .left-column p.lead {
+    font-size: 13px;
+    font-family: 'Raleway';
+    font-weight: 400; }
   .left-column ul {
-    padding: 0px 20px;
+    padding: 0px 10px;
     margin-bottom: 10px; }
   .left-column li {
-    padding-left: 0;
-    font-size: 13px; }
+    padding-left: 10px;
+    font-size: 13px;
+    margin-top: -2.9px; }
     .left-column li span {
       position: relative;
       left: -9px; }
@@ -111,8 +130,7 @@ li {
   text-align: left;
   padding: 0; }
   .right-column h2 {
-    font-family: 'Lato';
-    margin-bottom: 5px; }
+    font-family: 'Lato'; }
     .right-column h2 span {
       font-size: 12px;
       font-family: 'Raleway';
@@ -121,22 +139,86 @@ li {
     .right-column h2 span::first-letter {
       font-size: 14px;
       font-weight: 500; }
+  .right-column h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px; }
   .right-column ul {
     padding: 0px 0px;
     padding-left: 20px;
-    margin-bottom: 5px; }
-  .right-column li {
-    font-size: 14px; }
-    .right-column li span {
+    margin-bottom: 5px;
+    margin-top: 0px; }
+  .right-column ul li {
+    font-size: 13px; }
+    .right-column ul li span {
       position: relative;
       left: -5px; }
-    .right-column li span:before {
+    .right-column ul li span:before {
       content: "•";
       margin-left: 5px;
       margin-right: 5px;
       font-size: 14px; }
+  .right-column p {
+    font-family: 'Lato';
+    font-size: 13px;
+    font-weight: 300; }
+
+br {
+  display: block;
+  margin: 4px 0;
+  content: " "; }
 
 .tester li {
   margin-left: 5px; }
+
+ol {
+  padding: 0;
+  font-size: 13px; }
+  ol li span {
+    font-size: 13px; }
+
+.publications-list {
+  padding: 0;
+  counter-reset: list; }
+
+.publications-list > li {
+  list-style-position: none;
+  position: relative;
+  list-style: none;
+  margin-left: 20px; }
+
+.publications-list > li:before {
+  content: "[" counter(list,decimal) "]  ";
+  counter-increment: list;
+  position: absolute;
+  left: -20px; }
+
+#update-status {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 9.1px;
+  font-weight: 300; }
+
+/*
+ * Table
+ */
+table {
+  padding: 0;
+  font-family: 'Lato';
+  font-weight: 300;
+  border-collapse: separate;
+  border-spacing: 0px;
+  font-size: 13.013px; }
+  table sup {
+    padding: 0;
+    margin-left: -3px; }
+  table tr, table th, table td {
+    padding: 0; }
+  table th:nth-child(1), table td:nth-child(1) {
+    margin: 0;
+    padding-right: 10px; }
+  table th:nth-child(2), table td:nth-child(2) {
+    padding-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */
