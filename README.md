@@ -9,6 +9,7 @@ You can use [jade](http://jade-lang.com) to edit the content to your heart's del
 ### Installation
 
 * Clone this repo (I'd recommend you to fork this repo):
+
 **Note:** Use `--depth 1` to avoid having to download unnecessary commits.
 
 ```
@@ -21,7 +22,7 @@ git clone https://github.com/bk2dcradle/jade-resume.git --depth 1
 npm install
 ```
 
-* Initialize git submodules, these are the fonts [Raleway](https://github.com/softwaymedical/raleway.git) and [Lato](https://github.com/mrkelly/lato.git). Note that these have considerable size (about 16 MB):
+* Initialize git submodules. These are the fonts [Raleway](https://github.com/softwaymedical/raleway.git) and [Lato](https://github.com/mrkelly/lato.git). Note that these have considerable size (about 16 MB):
 
 ```
 git submodule update --init --recursive
