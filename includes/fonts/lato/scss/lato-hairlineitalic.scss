@@ -1,0 +1,18 @@
+//
+// Lato Hairline Italic
+// http://www.latofonts.com/
+// ------------------------------------------------------
+
+@font-face {
+  font-family: 'Lato';
+  src: url('#{$lato-font-path}/lato-hairlineitalic/lato-hairlineitalic.eot');
+  src: local('Lato Hairline Italic'),
+       local('Lato-HairlineItalic'),
+       url('#{$lato-font-path}/lato-hairlineitalic/lato-hairlineitalic.eot?#iefix') format('embedded-opentype'),
+       url('#{$lato-font-path}/lato-hairlineitalic/lato-hairlineitalic.woff2') format('woff2'),
+       url('#{$lato-font-path}/lato-hairlineitalic/lato-hairlineitalic.woff') format('woff'),
+       url('#{$lato-font-path}/lato-hairlineitalic/lato-hairlineitalic.ttf') format('truetype'),
+       url('#{$lato-font-path}/lato-hairlineitalic/lato-hairlineitalic.svg#lato') format('svg');
+  font-weight: 100;
+  font-style: italic;
+}

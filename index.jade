@@ -2,22 +2,21 @@ doctype html
 html(lang="en")
     head
         title= pageTitle
-        script(type='text/javascript').
-            if (foo) {
-                bar(1 + 5)
-            }
         link(href="includes/css/style.css", rel="stylesheet")
+        link(href="includes/fonts/raleway/raleway.css" rel="stylesheet")
+        link(href="includes/fonts/lato/css/lato.min.css" rel="stylesheet")
     body
         .heading
-            h1 #[span.lighten Ankit] Sultana
-            h3 #[a(href="https://ankitsultana.me") ankitsultana.me]
-            h3 #[a(href="mailto:ankitsultana@gmail.com") ankitsultana@gmail.com]
+            h1 #[span Ankit] Sultana
+            h3: a(href="https://ankitsultana.me") ankitsultana.me
+            h3 #[a(href="mailto:ankitsultana@gmail.com") ankitsultana@gmail.com | f2014070@pilani.bits-pilani.ac.in]
         hr
         .content
             .left-column
                 h1 College
                 h2 BITS Pilani, Pilani
                 h3 B.E in Computer Science
+                h4 Sophomore | Expected May: 2018
                 
                 h1 High School
                 h2 Narayana JEE Academy
@@ -31,10 +30,102 @@ html(lang="en")
                 
                 h1 Links
                 ul.nostyle
-                    li #[span LinkedIn://] #[a(href="https://linkedin.com") ankitsultana]
-                    li #[span Quora://] #[a(href="https://quora.com/Ankit-Sultana")Ankit-Sultana]
+                    li #[span LinkedIn #[a(href="https://quora.com/Ankit-Sultana") Ankit-Sultana]]
+                    li #[span Quora #[a(href="https://quora.com/Ankit-Sultana") Ankit-Sultana]]
+                    li #[span Facebook #[a(href="https://facebook/ankitsultana10") ankitsultana10]]
+                    li #[span Google+ #[a(href="https://google.com") ankitsultana10]]
                 
+                h1 Links (Code)
+                ul.nostyle
+                    li #[span LinkedIn #[a(href="https://quora.com/Ankit-Sultana") Ankit-Sultana]]
+                    li #[span Quora #[a(href="https://quora.com/Ankit-Sultana") Ankit-Sultana]]
+                    li #[span Facebook #[a(href="https://facebook/ankitsultana10") ankitsultana10]]
+                    li #[span Google+ #[a(href="https://google.com") ankitsultana10]]
+                    li #[span SPOJ #[a(href="https://google.com") ankitsultana10]]
+                    
+                h1 Skills
+                h2 Programming
+                h4 Profecient
+                ul.inline
+                    li #[span C99]
+                    li #[span C++]
+                    li #[span Python]
+                    li #[span Javascript]
+                    li #[span VimL]
+                
+                .clearfix
+                
+                h4 Moderate
+                ul.inline
+                    li #[span Java]
+                    li #[span C#]
+                    li #[span Ruby]
+                    li #[span LaTeX]
+                    li #[span HTML]
+                    li #[span CSS]
+                .clearfix
+                
+                h1 Hobbies
+                h2 Blogging
+                ul.nostyle.circle
+                    li #[span Blog hosted on GitHub]
+                    li #[span Made using Jekyll]
+                    li #[span Runs on Custom Made Theme]
+                
+                h2 Guitar
+                ul.nostyle.circle
+                    li #[span Experience of more than 7 years]
+            //////////////////////
+            // Left Column ends //
+            //////////////////////
             .right-column
                 h1 Sport Programming
-
-        
+                
+                h2 ACM ICPC | #[span Asia Amritapuri 2015]
+                ul
+                    li This is for testing purposes
+                    li Fuck this shit
+                
+                ul.nostyle
+                    li #[span Ranked 79 out of 1500+ teams in online round | Team: Carpe Noctem]
+                    li #[span Participated in Amritapuri Regional held in December 2015]
+                h2 Annual Contests | #[span Performance in Annual Contests]
+                ul.nostyle
+                    li #[span Morgan Stanley Codeathon 2015: Finished 31 out of more than 4k participants]
+                    li #[span CodeAgon 2015: Finished 131 out of more than 4.4k participants]
+                    
+                h2 Codeforces | #[span Rated blue]
+                ul.nostyle
+                    li #[span Maximum Rating: 1820 | Handle: bk2dcradle]
+                    li #[span Best Contest Rank: 80 | Participants: 4k+]
+                
+                h2 Other Websites | #[span Practice Regularly]
+                ul.nostyle
+                    li #[span TopCoder: Absolute Rating: 1261 | Rated: Blue | Handle: bk2dcradle]
+                    li #[span CodeChef: Short Contest Rank (National): 616 | Handle: ankit1s10_3]
+                    li #[span SPOJ: Absolute Rank: 624 | Handle: bk2dcradle]
+                
+                h1 Projects
+                
+                h2 Accent | #[span A theme for Jekyll]
+                ul.nostyle
+                    li #[span Made a theme for Jekyll using SASS]
+                    li #[span Accent is the second theme I have made, the first one was Chaplin]
+                
+                h2 Reddit New tab | #[span Chrome/Firefox Extension]
+                ul.nostyle
+                    li #[span Made a Chrome-Firefox Extension that displays posts from Subreddits of users choice]
+                    li #[span Chrome:reddit-new-tab]
+                    li #[span GitHub:reddit-new-tab]
+                
+                h2 Coding Calendar | #[span Static Website]
+                ul.nostyle
+                    li #[span A webpage that displays the list of upcoming programming contests]
+                    li #[span Used standard style Javascript]
+                    li #[span Website: codingcalendar.com]
+                
+                h2 Subtitle Downloader | #[span OS X Service]
+                ul.nostyle
+                    li #[span Wrote a Python Script to download subtitles for a movie file using the thesubdb API]
+                    li #[span Then created a service using Automator]
+                    li #[span Website: subtitle-downloader]        

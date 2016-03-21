@@ -1,0 +1,21 @@
+{
+  "name": "raleway",
+  "version": "1.0.1",
+  "main": "./raleway.css",
+  "homepage": "https://github.com/softwaymedical/raleway",
+  "authors": [
+    "opensource@softwaymedical.fr"
+  ],
+  "description": "The Raleway fontface",
+  "keywords": [
+    "font"
+  ],
+  "license": "SIL Open Font License",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
