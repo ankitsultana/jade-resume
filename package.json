@@ -1,5 +1,5 @@
 {
-  "name": "html-resume",
+  "name": "jade-resume",
   "version": "1.0.0",
   "description": "Because tex sucks",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bk2dcradle/html-resume.git"
+    "url": "git+https://github.com/bk2dcradle/jade-resume.git"
   },
-  "author": "",
+  "author": "Ankit Sultana",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bk2dcradle/html-resume/issues"
+    "url": "https://github.com/bk2dcradle/jade-resume/issues"
   },
   "homepage": "https://github.com/bk2dcradle/html-resume#readme",
   "devDependencies": {
