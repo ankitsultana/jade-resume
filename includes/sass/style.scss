@@ -36,6 +36,14 @@ br {
     margin: 4px 0;
     content: " ";
 }
+br.two {
+    @extend br;
+    margin: 6px 0;
+}
+br.three {
+    @extend br;
+    margin: 8px 0;
+}
 li {
     font-family: $font-stack-one;
     font-weight: 300;
