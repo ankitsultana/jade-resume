@@ -1,6 +1,23 @@
 module.exports = function (grunt) {
+  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks)
   grunt.initConfig({
+    express: {
+      all: {
+        options: {
+          port: 9000,
+          hostname: '0.0.0.0',
+          bases: [__dirname],
+          livereload: true
+        }
+      }
+    },
     watch: {
+      all: {
+        files: ['index.html', 'includes/css/style.css'],
+        options: {
+          livereload: true
+        }
+      },
       jade: {
         files: ['index.jade', 'data.json'],
         tasks: ['jade']
@@ -28,9 +45,16 @@ module.exports = function (grunt) {
           'includes/css/style.css': 'includes/sass/style.scss'
         }
       }
+    },
+    open: {
+      all: {
+        path: 'http://localhost:<%= express.all.options.port%>'
+      }
     }
   })
-  grunt.loadNpmTasks('grunt-contrib-watch')
-  grunt.loadNpmTasks('grunt-contrib-jade')
-  grunt.loadNpmTasks('grunt-contrib-sass')
+  grunt.registerTask('server', [
+    'express',
+    'open',
+    'watch'
+  ])
 }
