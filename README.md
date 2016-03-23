@@ -32,7 +32,7 @@ git submodule update --init --recursive
 
 ### Workflow
 
-To fill in your entries, you only need to edit `index.jade`. You can check the [sample](https://github.com/bk2dcradle/jade-resume/blob/gh-pages/index.jade) to see how it should be filled.
+To fill in your entries, you need to edit `index.jade`. You can check the [sample](https://github.com/bk2dcradle/jade-resume/blob/gh-pages/index.jade) to see how it should be filled.
 
 Just go to the `jade-resume` directory and do:
 
@@ -41,6 +41,8 @@ grunt server
 ```
 
 This will open a new tab/window in your default browser, you can use this to save the resume as PDF or preview changes. To change the contents, edit the `index.jade` file. The corresponding tab/window should live reload on every save action on the `index.jade` file. When are you satisfied with the changes, convert the page to PDF as mentioned below.
+
+You can also use an external JSON file for adding text to the resume. In this case, its './data.json`.
 
 ### PDF
 
