@@ -8,6 +8,8 @@ You can use [jade](http://jade-lang.com) to edit the content to your heart's del
 
 ### Installation
 
+This project has a simple three step process:
+
 * Clone this repo (I'd recommend you to fork this repo):
 
 **Note:** Use `--depth 1` to avoid having to download unnecessary commits.
@@ -22,7 +24,7 @@ git clone https://github.com/bk2dcradle/jade-resume.git --depth 1
 npm install
 ```
 
-* Initialize git submodules. These are the fonts [Raleway](https://github.com/softwaymedical/raleway.git) and [Lato](https://github.com/mrkelly/lato.git). Note that these have considerable size (about 16 MB):
+* **(Optional)** Initialize git submodules. These are the fonts [Raleway](https://github.com/softwaymedical/raleway.git) and [Lato](https://github.com/mrkelly/lato.git). Note that these have considerable size (about 16 MB combined):
 
 ```
 git submodule update --init --recursive
@@ -30,17 +32,15 @@ git submodule update --init --recursive
 
 ### Workflow
 
-You will need to run two processes, one is `grunt watch` to compile `.jade` and `.sass` files on every edit and the other is `live-server` to live-reload in the browser. So in one window, do
+To fill in your entries, you only need to edit `index.jade`. You can check the [sample](https://github.com/bk2dcradle/jade-resume/blob/gh-pages/index.jade) to see how it should be filled.
 
-```bash
-grunt watch
+Just go to the `jade-resume` directory and do
+
+```
+grunt server
 ```
 
-and in the other, do:
-
-```bash
-live-server
-```
+This will open a new tab/window in your default browser, you can use this to save the resume as PDF or preview changes. To change the contents, edit the `index.jade` file. The corresponding tab/window should live reload on every save action on the `index.jade` file.
 
 ### PDF
 
