@@ -11,7 +11,7 @@ html, body {
   width: 100%;
   height: 100%;
   text-align: center;
-  font-family: "Raleway"; }
+  font-family: "Raleway", "Helvetica Neue"; }
 
 ol {
   padding: 0;
@@ -23,10 +23,16 @@ sup {
   padding: 0;
   margin-left: -3px; }
 
-br {
+br, br.two, br.three {
   display: block;
   margin: 4px 0;
   content: " "; }
+
+br.two {
+  margin: 6px 0; }
+
+br.three {
+  margin: 8px 0; }
 
 li {
   font-family: "Lato";
@@ -78,7 +84,7 @@ a {
     .heading h1 span {
       font-weight: 100; }
   .heading h3 {
-    font-family: "Raleway";
+    font-family: "Raleway", "Helvetica Neue";
     font-size: 14px;
     color: #6A6A6A;
     font-weight: 200; }
@@ -121,7 +127,7 @@ a {
     font-weight: 300; }
   .left-column p.lead {
     font-size: 13px;
-    font-family: "Raleway";
+    font-family: "Raleway", "Helvetica Neue";
     font-weight: 400; }
   .left-column ul {
     padding: 0px;
@@ -166,7 +172,7 @@ a {
     font-family: "Lato"; }
     .right-column h2 span {
       font-size: 12px;
-      font-family: "Raleway";
+      font-family: "Raleway", "Helvetica Neue";
       display: inline-block;
       font-weight: 500; }
     .right-column h2 span::first-letter {
