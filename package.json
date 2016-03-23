@@ -1,6 +1,6 @@
 {
   "name": "jade-resume",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Because tex sucks",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "url": "git+https://github.com/bk2dcradle/jade-resume.git"
   },
   "author": "Ankit Sultana",
-  "license": "GNU GPL v3",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/bk2dcradle/jade-resume/issues"
   },
