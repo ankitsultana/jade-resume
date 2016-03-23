@@ -20,7 +20,7 @@ html(lang="en")
                 Last updated on March 21, 2016
         // Things above the horizontal rule
         .heading
-            h1 #[span Debarghya] Das
+            h1 #[span #{firstName}] #{lastName}
             h3 #[a(href="#") debarghyadas.com] | #[a(href="#") fb.co/dd]
             h3 #[a(href="#") deedy@fb.com | 607.379.5733 | dd367@cornell.edu]
         hr
@@ -53,36 +53,23 @@ html(lang="en")
                 h1 Links
                 // List follows
                 ul.nostyle
-                    li Facebook://#[a(href="#") dd]
-                    li GitHub://#[a(href="#") deedydas]
-                    li LinkedIn://#[a(href="#") debarghyadas]
-                    li YouTube://#[a(href="#") DeedyDash007]
-                    li Twitter://#[a(href="#") @debarghya_das]
-                    li Quora://#[a(href="#") Debarghya-Das]
+                    - for (var i = 0; i < links.length; i++)
+                        li #{links[i][0]}://#[a(href="#{links[i][1]}") #{links[i][2]}]
                 
                 ///////// Begin Section: Coursework /////////
                 h1 Coursework
                 // Begin Subsection
                 h2 Graduate
-                p Advanced Machine Learning
-                p Open Source Sofware Engineering
-                p Advanced Interactive Graphics
-                p Compilers + Practicum
-                p Cloud Computing
-                p Evolutionary Computation
-                p Defending Computer Networks
-                p Machine Learning
+                - for (var i = 0; i < graduateCourses.length; i++)
+                    p= graduateCourses[i]
                 
                 // Begin Subsection
                 h2 Undergraduate
-                p Information Retrieval
-                p Operating Systems
-                p Artificial Intelligence + Practicum
-                p Functional Programming
-                p Computer Graphics + Practicum
-                p.italic.bold (Research Asst. & Teaching Asst 2x)
-                p Unix Tools and Scripting
-                
+                - for (var i = 0; i < undergradCourses.length; i++)
+                    p= undergradCourses[i]
+                    - if (i == 4)
+                        p.italic.bold (Research Asst. & Teaching Asst 2x)
+
                 ///////// Begin Section: Skills /////////
                 h1 Skills
                 // Begin Subsection
@@ -94,23 +81,17 @@ html(lang="en")
                 //       than the browser default value. Refer:
                 //       http://stackoverflow.com/questions/4373046/css-control-space-between-bullet-and-li
                 ul.inline
-                    li #[span Java]
-                    li #[span Shell]
-                    li #[span Python]
-                    li #[span Javascript]
-                    li #[span OCaml]
-                    li #[span Matlab]
-                    li #[span Rails]
-                    li #[span LaTeX]
+                    - for (var i = 0; i < languagesStrong.length; i++)
+                        li
+                            span= languagesStrong[i]
                 
                 .clearfix
                 
                 h4.no-overlap Familiar
                 ul.inline
-                    li #[span AS3]
-                    li #[span iOS]
-                    li #[span Android]
-                    li #[span MySQL]
+                    - for (var i = 0; i < languagesFamiliar.length; i++)
+                        li
+                            span= languagesFamiliar[i]
             ////////////////////////
             /// Left Column ends ///
             ////////////////////////
@@ -176,30 +157,10 @@ html(lang="en")
                 h1 Awards
                 table(cellspacing="0", cellpadding="0")
                     tbody
-                        tr
-                            td 2014
-                            td Top 52/2500
-                            td KPCB Engineering Fellow
-                        tr
-                            td 2014
-                            td 1 #[sup st]/50
-                            td Microsoft Coding Competition, Cornell
-                        tr
-                            td 2013
-                            td National
-                            td Jump Trading Challenge Finalist
-                        tr
-                            td 2013
-                            td 7 #[sup th]/120
-                            td CS 3410 Cache Race Bot Tournament
-                        tr
-                            td 2012
-                            td 2 #[sup nd]/150
-                            td CS 3110 Biannual Intra-Class Bot Tournament
-                        tr
-                            td 2012
-                            td National
-                            td Indian National Mathematics Olympiad(INMO) Finalist
+                        - for (var i = 0; i < table.length; i++)
+                            tr
+                                - for (var j = 0; j < table[i].length; j++)
+                                    td!= table[i][j]
                 ///////// Begin Section: Publications /////////
                 h1 Publications
                 ol.publications-list

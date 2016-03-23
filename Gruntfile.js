@@ -2,7 +2,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
     watch: {
       jade: {
-        files: ['index.jade'],
+        files: ['index.jade', 'data.json'],
         tasks: ['jade']
       },
       sass: {
@@ -14,6 +14,11 @@ module.exports = function (grunt) {
       compile: {
         files: {
           'index.html': 'index.jade'
+        },
+        options: {
+          data: function (dest, src) {
+            return require('./data.json')
+          }
         }
       }
     },
